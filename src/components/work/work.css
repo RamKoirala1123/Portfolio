@@ -36,25 +36,28 @@
 }
 
 
-/* .timeline {
-    background-color: #5918df;
-    height: 1000px;
-    left: 230px !important; 
-    position: absolute;
-    top: 13px;
-    width: 3px;
-    z-index: 0;
-}
-
-.bullet:before {
-    background-color: var(--background-color);
-    border: 2px solid #5918df;
-    border-radius: 50%;
-    position: absolute;
-    content: "";
-    height: 9px;
-    left: -5px;
-    top: 60px;
-    width: 9px;
-    z-index: 10;
-} */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .work .custom-card {
+    animation: slideIn ease-in-out 1s forwards, fadeIn ease-in-out 1s forwards;
+    animation-delay: 1s;
+  }
+  

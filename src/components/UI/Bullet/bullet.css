@@ -1,0 +1,17 @@
+    .bullet{
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .bullet:before {
+        background-color: var(--sidebar-color);
+        border: 2px solid #5918df;
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        height: 9px;
+        left: -5px;
+        top: 60px;
+        width: 9px;
+        z-index: 10;
+    }

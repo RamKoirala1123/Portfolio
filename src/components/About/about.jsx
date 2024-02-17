@@ -41,7 +41,7 @@ const About = () => {
     fontSize: '1.4rem',
     borderRadius: '5px',
     backgroundColor: 'var(--background-color)',
-    padding: '20px',
+    padding: '0px',
   };
 
   const codeRef = useRef(null);
@@ -75,7 +75,7 @@ const About = () => {
   const [hoveredLine, setHoveredLine] = useState(null);
 
   const lineProps = (lineNumber) => {
-    let style = { display: 'block', transition: 'background-color 0s', borderLeft: '5px solid var(--vertical-line-color)' };
+    let style = { display: 'block', transition: 'background-color 0s', borderLeft: '5px solid var(--vertical-line-color)',};
     if (lineNumber === hoveredLine) {
       // style.backgroundColor = '#ffdd57';
       style.backgroundColor = 'var(--hover-lin-color)';

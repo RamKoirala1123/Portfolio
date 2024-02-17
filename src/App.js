@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router } from 'react-router-dom'
 import Singleproject from "./components/Projectttt/singleproject";
 import Work from "./components/work/work";
+import SideBar from "./components/Sidebar/sidebar";
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         <Router>
           <Navbar />  
           <div className="mainbody">
-          <Work/>
           <About /> 
+          <Work/>
           </div>
         
         </Router>

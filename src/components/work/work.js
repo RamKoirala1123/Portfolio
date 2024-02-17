@@ -4,7 +4,7 @@ import './work.css'
 import Singleproject from '../Projectttt/singleproject'
 
 const Work = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   // Function to toggle the active state
   const toggleActive = () => {
@@ -53,9 +53,6 @@ const Work = () => {
               backgroundImage="./assets/image/project/survey.jpg"
             ></Card>
           </div>
-
-
-
           <div className="custom-card" onClick={toggleActive} >
             <Card
               title="SLR Parser"

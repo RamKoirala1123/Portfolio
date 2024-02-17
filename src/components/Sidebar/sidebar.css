@@ -1,0 +1,18 @@
+.sidebar{
+    background-color: var(--sidebar-color);
+    width: 10vw;
+    height: 100vw;
+    overflow: hidden;
+ }
+.timeline {
+    background-color: #5918df;
+    /* height: 1000px; */
+    height: 500px;
+    left: 5vw;
+    /* left: 230px !important;  */
+    position: absolute;
+    top: 13px;
+    width: 3px;
+    z-index: 0;
+}
+

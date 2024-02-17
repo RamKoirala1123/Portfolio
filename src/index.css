@@ -12,9 +12,11 @@
   --color-gradient: linear-gradient(90deg,#987ffd,#3301e7 100%);
   --hover-lin-color: rgba(169, 169, 169, 0.2);
   --vertical-line-color: red;
+  --sidebar-color:#060417
 }
 
 [data-theme = "dark"]{
+  --sidebar-color: #f6f6f6;
   --background-color: #060417;
   --text-color: #fff;
   /* --active-color:#7e61e7; */
@@ -48,7 +50,7 @@ body {
   font-style: normal;
   position: relative;
   left:20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-top:40px;
 }
 
