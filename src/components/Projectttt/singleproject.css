@@ -1,0 +1,140 @@
+.app-container {
+    display: flex;
+    /* margin-top:30px ; */
+}
+
+.left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%;
+    overflow-y: auto;
+}
+
+.right-section {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10vw;
+}
+
+@media (max-width: 769px) {
+    .image-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .app-container {
+        display: block;
+    }
+
+    .left-section {
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-content ul {
+        display: none;
+    }
+}
+
+.material-symbols-outlined {
+    color: var(--text-color)
+}
+
+.material-symbols-outlined:hover {
+    color: var(--active-color);
+}
+
+.back-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.wrap {
+    position: relative;
+    padding: 8px;
+}
+
+.content-wrap:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    /* background: url(https://i.imgur.com/aGh7Wsr.png) no-repeat; */
+    background: url("./finalphone.png") no-repeat;
+    background-size: contain;
+}
+
+.content-wrap {
+    width: 225px;
+    height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 2px;
+
+}
+
+.image-container {
+    margin-left: -3px;
+    margin-right: 23px;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.image-container img {
+    margin: 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.about-project p {
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 25px;
+    /* letter-spacing: ; */
+}
+
+.singleprojectpage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.singleprojectpage.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    /* right: calc(10vw); */
+    cursor: pointer;
+    max-width: 30px;
+}

@@ -1,0 +1,71 @@
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  h2::before{
+    content: "";
+    background: white;
+    position: absolute;
+    height: 3%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+  }
+  
+  /* .card {
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+ 
+    margin: auto;
+    padding: 40px;
+    color: #fff;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    position: relative;
+  } */
+  
+  .card::before {
+    content: "";
+    /* background: rgba(0, 0, 0, 0.9); */
+    background: linear-gradient(to top right, rgb(0, 0, 0), transparent);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    bottom: 0;
+  } 
+  
+  /* Slight parallax effect on hover */
+  .card:hover .content {
+    transform: translateZ(15px);    
+  }
+  
+  .content {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
