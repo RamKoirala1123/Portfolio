@@ -34,30 +34,3 @@
     grid-column: 3;
     grid-row:10 / span 9;
 }
-
-
-@keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .work .custom-card {
-    animation: slideIn ease-in-out 1s forwards, fadeIn ease-in-out 1s forwards;
-    animation-delay: 1s;
-  }
-  

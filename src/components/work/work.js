@@ -1,7 +1,9 @@
-import { React, useState } from 'react'
+import { React, useEffect, useState } from 'react'
 import Card from '../Card/card'
 import './work.css'
 import Singleproject from '../Projectttt/singleproject'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Work = () => {
   const [isActive, setIsActive] = useState(false);
@@ -10,6 +12,10 @@ const Work = () => {
   const toggleActive = () => {
     setIsActive(!isActive);
   };
+
+  useEffect(() => {
+    AOS.init({duration: "500", once:true});
+  },[])
   return (
     <>
       <Singleproject isActive={isActive} toggleActive={toggleActive} />
@@ -18,7 +24,7 @@ const Work = () => {
           Projects {">"}
         </div>
         <div className='work'>
-          <div className="custom-card" onClick={toggleActive}>
+          <div className="custom-card" onClick={toggleActive} data-aos =  "fade-right"  >
             <Card
               title="Algo Visualizer"
               content=""
@@ -27,7 +33,7 @@ const Work = () => {
             />
           </div>
 
-          <div className="custom-card" onClick={toggleActive}>
+          <div className="custom-card" onClick={toggleActive}  data-aos =  "fade-right" data-aos-anchor-placement="top-center">
             <Card
               title="Horoscope"
               content=""
@@ -36,7 +42,7 @@ const Work = () => {
             />
           </div>
 
-          <div className="custom-card" onClick={toggleActive}>
+          <div className="custom-card" onClick={toggleActive}  data-aos = "fade-right">
             <Card
               title="Financial Calculator"
               content=""
@@ -45,7 +51,7 @@ const Work = () => {
             ></Card>
           </div>
 
-          <div className="custom-card" onClick={toggleActive}>
+          <div className="custom-card" onClick={toggleActive}  data-aos = "fade-right">
             <Card
               title="Survey App"
               content=""
@@ -53,7 +59,7 @@ const Work = () => {
               backgroundImage="./assets/image/project/survey.jpg"
             ></Card>
           </div>
-          <div className="custom-card" onClick={toggleActive} >
+          <div className="custom-card" onClick={toggleActive} data-aos = "fade-right" >
             <Card
               title="SLR Parser"
               content=""

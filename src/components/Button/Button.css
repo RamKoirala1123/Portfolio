@@ -4,13 +4,16 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: #090909;
-    padding: 0.7em 1.7em;
+    /* color: #090909; */
+    color: var(--active-color);
+    padding: 0.5em 1em;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #e8e8e8;
+    background-color: transparent;
+    /* background: #e8e8e8; */
+    /* border: 1px solid #e8e8e8; */
+    border: 1px solid var(--active-color);
     /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
   }
   
@@ -45,12 +48,14 @@
     background-color: var(--active-color);
     border-radius: 50%;
     display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.5s 0s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
   }
   
   .button2:hover {
-    color: #ffffff;
+    /* color: #ffffff; */
+    /* color: var(--text-color); */
+    color: #060417;
     border: 1px solid var(--active-color);
   }
   

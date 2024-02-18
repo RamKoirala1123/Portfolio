@@ -7,6 +7,7 @@ import { useTheme } from '../DarkMode/themecontext';
 import { NavLink } from 'react-router-dom';
 import resume from '../resume/resume.pdf';
 import { Link } from 'react-router-dom';
+import CustomButton from '../Button/CustomButton';
 
 
 const Navbar = () => {
@@ -26,7 +27,10 @@ const Navbar = () => {
             download="Ram_Koirala_Resume"
             target="_blank"
             rel="noreferrer"
+            className='resume'
           >
+            {/* My Resume */}
+            <CustomButton name="My Resume"/>
             {/* {darkMode ? (
               <img src="./assets/image/darklogo.svg" alt="Logo" className='logo' />
             ) : (
@@ -58,7 +62,7 @@ const Navbar = () => {
             {/* <button className="contact-btn">
               Hire me
             </button> */}
-            <DarkMode />
+            {/* <DarkMode /> */}
           </ul>
 
           <button class="menu-btn" onClick={toogleMenu}>

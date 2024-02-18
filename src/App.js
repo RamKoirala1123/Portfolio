@@ -16,6 +16,7 @@ function App() {
           <div className="mainbody">
           <About /> 
           <Work/>
+         
           </div>
         
         </Router>

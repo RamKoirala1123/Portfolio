@@ -8,12 +8,14 @@
 }
 
 .nav-content{
+    padding: 5px;
     max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content:space-between ;
     /* padding: 1rem 0; */
-    margin: 0 auto;
+    margin-left: 8vw;
+    /* margin: 0 auto; */
 }
 
 .logo{
@@ -39,7 +41,8 @@
 
 .nav-content .nav-item{
     text-decoration: none;
-    font-size: 1.0rem;
+    /* font-size: 1.0rem; */
+    font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
     position: relative;
@@ -88,6 +91,17 @@
     border: 1px solid #a993fe;
 }
 
+.resume{
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.resume:hover{
+    color: var(--active-color);
+}
 @media (max-width: 425px){
     .logo{
         width: 8rem;

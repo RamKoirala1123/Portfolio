@@ -8,7 +8,8 @@
   --nav-color: green  ;
   --text-color: #000;
   /* --active-color:#3301e7; */
-  --active-color:#e85757;
+  /* --active-color:#e85757; */
+  --active-color:#0aff9d;
   --color-gradient: linear-gradient(90deg,#987ffd,#3301e7 100%);
   --hover-lin-color: rgba(169, 169, 169, 0.2);
   --vertical-line-color: red;
@@ -20,7 +21,7 @@
   --background-color: #060417;
   --text-color: #fff;
   /* --active-color:#7e61e7; */
-  --active-color:#e85757;
+  --active-color:#0aff9d;
   --color-gradient: linear-gradient(90deg,#a993fe,#7e61e7 100%);
   --hover-lin-color:  rgb(41, 30, 47,0.5);
   --vertical-line-color: red;
@@ -67,4 +68,15 @@ body {
   width: 80vw;
   margin-left: 8vw;
   margin-right: 5vw;
+}
+
+/* Text selection color */
+::-moz-selection { 
+  color: #060417;
+  background: var(--active-color);
+}
+
+::selection {
+  color: #060417;
+  background: var(--active-color);
 }
