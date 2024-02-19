@@ -1,16 +1,25 @@
 import React from 'react'
 import "./sidebar.css"
 import Bullet from '../UI/Bullet/bullet'
+import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
   return (
     <div className='sidebar'>
-      <div className="timeline">
-        <Bullet position="60px"/>
-        <Bullet position="120px"/>
-        <Bullet position="180px"/>
-        <Bullet position="240px"/>
-      </div>
+        <div className="side-content">
+              <NavLink to="/" className="side-item">
+                Home
+              </NavLink>
+              <NavLink to="#about" className="side-item">
+                Skills
+              </NavLink>
+              <NavLink to="#project" className="side-item">
+                Project
+              </NavLink>
+              <NavLink to="#contact" className="side-item">
+                Contact Me
+              </NavLink>
+        </div>
     </div>
   )
 }

@@ -5,21 +5,26 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Singleproject from "./components/Projectttt/singleproject";
 import Work from "./components/work/work";
 import SideBar from "./components/Sidebar/sidebar";
+import BackToTop from "./components/Utils/Backtotop/Backtotop";
 
 
 function App() {
   return (
-  
+
     <ThemeProvider>
-        <Router>
-          <Navbar />  
-          <div className="mainbody">
-          <About /> 
-          <Work/>
-         
-          </div>
-        
-        </Router>
+      <Router>
+        <div className="home">
+        <SideBar />
+        <div className="mainbody"> 
+           <Navbar />
+           <div className="body">
+           <About />
+          <Work />
+           </div>
+        </div>
+        </div>
+        <BackToTop/>
+      </Router>
     </ThemeProvider>
   );
 }

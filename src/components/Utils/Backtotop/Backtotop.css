@@ -1,0 +1,38 @@
+.backToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    height: 30px;
+    font-size: 3rem;
+    z-index: 999;
+  }
+  
+  .backToTop button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .backToTop {
+      right: -10px;
+      bottom: 50px;
+      font-size: 2.75rem;
+    }
+  }
+
+
+  .svgimage svg {
+    transition: fill 0s;
+    /* Add transition property to smoothly change fill color */
+}
+
+.svgimage:hover svg {
+    fill: var(--active-color);
+    /* Make the button glow */
+    filter: drop-shadow(0 0 10 20px var(--active-color) );
+    /* Change this to the desired fill color on hover */
+    cursor: pointer;
+}
