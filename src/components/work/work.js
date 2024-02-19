@@ -3,8 +3,7 @@ import Card from '../Card/card'
 import './work.css'
 import Singleproject from '../Projectttt/singleproject'
 import AOS from 'aos';
-// import URL("https://unpkg.com/aos@next/dist/aos.css");
-// import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css'; 
 
 const Work = () => {
   const [isActive, setIsActive] = useState(false);
