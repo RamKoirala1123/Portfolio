@@ -44,14 +44,6 @@
 
 }
 
-.material-symbols-outlined {
-    color: var(--text-color)
-}
-
-.material-symbols-outlined:hover {
-    color: var(--active-color);
-}
-
 .back-btn {
     cursor: pointer;
     border: none;

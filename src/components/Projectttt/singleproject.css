@@ -1,5 +1,6 @@
 .app-container {
     display: flex;
+
     /* margin-top:30px ; */
 }
 
@@ -132,8 +133,8 @@
 
 .close-btn {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 60px;
+    right: 50px;
     /* right: calc(10vw); */
     cursor: pointer;
     max-width: 30px;

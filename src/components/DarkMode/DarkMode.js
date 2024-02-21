@@ -8,6 +8,7 @@ const DarkMode = () => {
 
     const { darkMode, toggleDarkMode } = useTheme();
 
+
     // setDarkMode();
     return (
         <div className='dark_mode'>
@@ -18,12 +19,13 @@ const DarkMode = () => {
                 onChange={toggleDarkMode}
                 defaultChecked={darkMode}
             />
-            <label className='dark_mode_label' for='darkmode-toggle'>
+            
+            <label className='dark_mode_label' htmlFor='darkmode-toggle'>
                 <Sun />
                 <Moon />
             </label>
         </div>
-    );
+    );  
 };
 
 export default DarkMode;

@@ -6,12 +6,12 @@ import Singleproject from "./components/Projectttt/singleproject";
 import Work from "./components/work/work";
 import SideBar from "./components/Sidebar/sidebar";
 import BackToTop from "./components/Utils/Backtotop/Backtotop";
+import Idea from "./components/idea/idea";
 
 
 function App() {
   return (
 
-    <ThemeProvider>
       <Router>
         <div className="home">
         <SideBar />
@@ -25,7 +25,7 @@ function App() {
         </div>
         <BackToTop/>
       </Router>
-    </ThemeProvider>
+
   );
 }
 
