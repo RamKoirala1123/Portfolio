@@ -19,17 +19,33 @@ const Singleproject = ({ isActive, toggleActive }) => {
                     </div>
                 </div>
                 <div className="right-section">
+                    <span class="material-symbols-outlined close-btn" onClick={toggleActive}>
+                        close
+                    </span>
                     <div className='about-project'>
-                        <p>
+                        <p className='about'>
+                            <div className="second-title">
+                                About {">"}
+                            </div>
                             Crafted with precision using Flutter and Dart, Stellar Visions is the ultimate horoscope app designed to provide you with daily, weekly, and yearly astrological guidance. Seamlessly blending intuitive design with powerful functionality, this app brings the mystique of the cosmos right to your fingertips.
                         </p>
-                        <CustomButton name="Go to Project" />
+                        <div className="second-title">
+                            Language Used {">"}
+                        </div>
+                        <span className='language'>Flutter</span>
+                        <span className='language'>Django</span>
+                        <span className='language'>Rest Framework</span>
+                        <span className='language'>Getx</span>
+                        <br />
+                        <br />
+                        <br />
+                        <CustomButton name="Source Code" />
                     </div>
+
                 </div>
+
             </div>
-            <span class="material-symbols-outlined close-btn" onClick={toggleActive}>
-                close
-            </span>
+
         </div>
     );
 }

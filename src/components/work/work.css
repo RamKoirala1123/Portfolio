@@ -1,5 +1,3 @@
-
-
 .work {
     display: grid;
     row-gap: 50px;
@@ -34,3 +32,4 @@
     grid-column: 3;
     grid-row:10 / span 9;
 }
+
