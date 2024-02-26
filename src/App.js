@@ -10,7 +10,6 @@ import Idea from "./components/idea/idea";
 import Contact from "./components/Contact/contact";
 import Project from "./components/Project/project";
 import HomePage from "./components/HomePage/homepage";
-import { Cursor } from "custom-pointer-react";
 
 
 function App() {
