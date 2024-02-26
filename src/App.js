@@ -9,6 +9,8 @@ import BackToTop from "./components/Utils/Backtotop/Backtotop";
 import Idea from "./components/idea/idea";
 import Contact from "./components/Contact/contact";
 import Project from "./components/Project/project";
+import HomePage from "./components/HomePage/homepage";
+import { Cursor } from "custom-pointer-react";
 
 
 function App() {
@@ -16,12 +18,11 @@ function App() {
 
     <Router>
       <Routes>
-
-     
-          <Route path="about" element={<Project/>}/>
-          </Routes>
+          <Route path="/project/:id" element={<Project/>}/>
+          <Route path="/" element={<HomePage/>}/>
+                    </Routes>
       {/* <Project/> */}
-      <div className="home">
+      {/* <div className="home">
         <SideBar />
         <div className="mainbody">
           <Navbar />
@@ -31,7 +32,7 @@ function App() {
             <Contact/>
           </div>
         </div>
-      </div>
+      </div> */}
       <BackToTop />
     </Router>
 

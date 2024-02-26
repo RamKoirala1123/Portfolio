@@ -5,17 +5,23 @@ import 'material-symbols';
 import Codecard from '../Utils/CodeCard/codecard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import database from '../database/project.json'
+import {useParams, useNavigate  } from 'react-router-dom';
+const Project = () => {
+    const navigate = useNavigate();
+    const { id } = useParams();
+    const project = database.project.find(project => project.id === id);
 
-const Project = ({ isActive, toggleActive, name, about, codelink, imgsource, isweb }) => {
-    const ProjectPageClass = isActive ? "project-page active" : "project-page";
+    const { name, about, codelink, imgsource, isweb } = project;
 
     useEffect(() => {
         AOS.init({ duration: "500",});
       }, [])
-
+      
+ 
     return (
         <>
-            <div className={ProjectPageClass}>
+            <div className='project-page'>
                 <div className="circle-blur"></div>
                 <div className="circle-blur1"></div>
                 <div className="circle-blur3"></div>
@@ -23,7 +29,7 @@ const Project = ({ isActive, toggleActive, name, about, codelink, imgsource, isw
                     <div className="header" data-aos =  "fade-up" >
                         {name}
                         
-                        <span class="material-symbols-outlined close-button" onClick={toggleActive}>
+                        <span className="material-symbols-outlined close-button" onClick={() => navigate(-1)}   >
                             close
                         </span>
                     </div>
@@ -72,8 +78,9 @@ const Project = ({ isActive, toggleActive, name, about, codelink, imgsource, isw
                        
                        <div className="wrap-content-mobile" data-aos="fade-up-left">
                             <div className="image-mobile">
+                            
                                 <img src={imgsource} alt='Image'/>
-                                {/* <img src="./assets/image/horoscope.jpg" alt="Your" /> */}
+                                {/* <img src="/assets/image/calc.jpg" alt="Your" /> */}
                             </div>
                         </div>
                          }

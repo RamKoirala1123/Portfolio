@@ -90,7 +90,7 @@ const About = () => {
   };
   return (
     <>
-    <div className="aboutpage">
+    <div className="aboutpage" id='about'>
       <div className="title">
         About {">"}
       </div>

@@ -1,35 +1,42 @@
-import React from 'react'
+import {React,useState} from 'react'
 import "./sidebar.css"
 import Bullet from '../UI/Bullet/bullet'
 import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
+  const [activeItem, setActiveItem] = useState('Home');
+
+
+  const scrollToComponent = (componentId) => {
+    setActiveItem(componentId);
+    const component = document.getElementById(componentId);
+    if (component) {
+        component.scrollIntoView({
+            behavior: 'smooth',
+
+            // duration: 100,
+            block: 'start',
+            inline: 'nearest',
+            // offset:1000,
+        });
+    }
+};
+
   return (
     <div className='sidebar'>
         <div className="side-content">
-          <ul>
-            <li>
-            <NavLink to="/" className="side-item">
+            <div  className={activeItem === 'Home' ? 'side-item active' : 'side-item'}  onClick={() => scrollToComponent('Home')}> 
                 Home
-              </NavLink>
-            </li>
-            <li>
-            <NavLink to="/about" className="side-item">
-                Skills
-              </NavLink>
-            </li>
-            <li>
-            <NavLink to="/project" className="side-item">
+              </div>
+            <div to="/about"  className={activeItem === 'about' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('about')}>
+                About
+              </div>
+            <div to="/project" className={activeItem === 'project' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('project')}>
                 Project
-              </NavLink>
-            </li>
-            <li>    <NavLink to="/contact" className="side-item">
+              </div>
+            <div to="/contact"  className={activeItem === 'contact' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('contact')}>
                 Contact Me
-              </NavLink></li>
-          </ul>
-              
-              
-              
+              </div>
           
         </div>
     </div>

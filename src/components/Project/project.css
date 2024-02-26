@@ -1,6 +1,5 @@
 .project-page {
     display: flex;
-    /* visibility: hidden; */
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -9,14 +8,9 @@
     top: 0;
     background-color: var(--background-color);
     /* left: 50%; */
-    /* opacity: 0; */
     /* padding-left: 10px; */
 }
 
-.project-page.active {
-    visibility: visible;
-    opacity: 1;
-}
 
 .header {
     width: 100%;
