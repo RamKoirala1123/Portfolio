@@ -10,11 +10,11 @@ import Idea from "./components/idea/idea";
 import Contact from "./components/Contact/contact";
 import Project from "./components/Project/project";
 import HomePage from "./components/HomePage/homepage";
+import Cursor from "./components/UI/Cursor/cursor";
 
 
 function App() {
   return (
-
     <Router>
       <Routes>
           <Route path="/project/:id" element={<Project/>}/>
@@ -32,6 +32,7 @@ function App() {
           </div>
         </div>
       </div> */}
+      <Cursor/>
       <BackToTop />
     </Router>
 

@@ -43,9 +43,11 @@
   font-family:"Poppins", sans-serif;
   margin: 0 !important;
   box-sizing: border-box;
+  cursor: none;
 }
 
 body {
+  cursor: none;
   margin: 0;
   color: #fff;
   /* background-color: #060417; */
@@ -122,4 +124,8 @@ body {
 
 .material-symbols-outlined:hover {
   color: var(--active-color);
+}
+
+#particles canvas{
+  z-index: -1;
 }

@@ -3,6 +3,10 @@
     row-gap: 50px;
 }
 
+.work .custom-card{
+    z-index: 1;
+}
+
 .work .custom-card:nth-child(1) {
     grid-column: 1;
     grid-row: span 5;

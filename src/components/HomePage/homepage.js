@@ -5,6 +5,8 @@ import Navbar from "../Navbar/Navbar";
 import Work from "../work/work";
 import SideBar from "../Sidebar/sidebar";
 import Contact from "../Contact/contact";
+import Home from '../CustomAnimation/home';
+import ParticlesComponent from '../CustomAnimation/particlebackground';
 
 const HomePage = () => {
   return (
@@ -12,11 +14,14 @@ const HomePage = () => {
     <div className="home">
     <SideBar />
     <div className="mainbody">
+      
       <Navbar />
       <div className="body">
+        <Home/>
         <About />
         <Work />
         <Contact/>
+        <ParticlesComponent id="particles"/>
       </div>
     </div>
   </div>

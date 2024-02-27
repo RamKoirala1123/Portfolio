@@ -53,8 +53,6 @@
   }
   
   .button2:hover {
-    /* color: #ffffff; */
-    /* color: var(--text-color); */
     color: #060417;
     border: 1px solid var(--active-color);
   }

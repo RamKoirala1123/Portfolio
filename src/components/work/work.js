@@ -164,7 +164,6 @@ const Work = () => {
           Projects {'>'}
         </div>
         <div className='work'>
-
         {database.project.map(project =>  (
           <div className="custom-card"  data-aos={project.animation}>
             <Link to={`/project/${project.id}`}>

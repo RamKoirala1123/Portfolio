@@ -4,7 +4,7 @@ import Bullet from '../UI/Bullet/bullet'
 import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
-  const [activeItem, setActiveItem] = useState('Home');
+  const [activeItem, setActiveItem] = useState('homepage');
 
 
   const scrollToComponent = (componentId) => {
@@ -25,7 +25,7 @@ const SideBar = () => {
   return (
     <div className='sidebar'>
         <div className="side-content">
-            <div  className={activeItem === 'Home' ? 'side-item active' : 'side-item'}  onClick={() => scrollToComponent('Home')}> 
+            <div  className={activeItem === 'homepage' ? 'side-item active' : 'side-item'}  onClick={() => scrollToComponent('homepage')}> 
                 Home
               </div>
             <div to="/about"  className={activeItem === 'about' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('about')}>
