@@ -97,14 +97,21 @@ body {
 }
 
 .body{
-  width: 80vw;
-  margin-left: 6vw;
+  width: 90vw;
+  margin-left: 5vw;
   margin-right: 5vw;
 }
 
 .home{
   display: grid;
   grid-template-columns: 70px 1fr;
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Text selection color */

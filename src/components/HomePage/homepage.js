@@ -7,6 +7,7 @@ import SideBar from "../Sidebar/sidebar";
 import Contact from "../Contact/contact";
 import Home from '../CustomAnimation/home';
 import ParticlesComponent from '../CustomAnimation/particlebackground';
+import Skills from '../Skills/skills';
 
 const HomePage = () => {
   return (
@@ -20,6 +21,8 @@ const HomePage = () => {
         <Home/>
         <About />
         <Work />
+        <Skills/>
+        <About/>
         <Contact/>
         <ParticlesComponent id="particles"/>
       </div>

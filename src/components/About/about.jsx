@@ -2,39 +2,39 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import React, { useEffect, useRef, useState } from 'react';
+import './about.css'
 
 const About = () => {
   const codeString = `class RamKoirala {
 
-          String name = 'Ram Koirala';
-          int dayOfBirthTimestamp = 996764400;
-          String email = 'ramkoirala1123@gmail.com';
+    String name = 'Ram Koirala';
+    String email = 'ramkoirala1123@gmail.com';
         
-          List<Map<String, String>> education() {
-          return [
-              {
-                '2016-2018': 
-                'Kavre Secondary School, Banepa - High School Education, Science Faculty'
-              },
-              {
-                '2019-2024':  
-                'Kathmandu University, Dhulikhel- Bachelor of Engineering , Computer Engineering'
-              }
-            ];
-          }
+    List<Map<String, String>> education() {
+      return [
+        {
+          '2016-2018': 
+          'Kavre Secondary School, Banepa - High School Education, Science Faculty'
+          },
+        {
+          '2019-2024':  
+          'Kathmandu University, Dhulikhel- Bachelor of Engineering , Computer Engineering'
+        }
+      ];
+    }
         
-          List<String> skills() {
-            return [
-              'HTML/CSS/JS',
-              'Flutter',
-              'Dart',
-              'React',
-              'C#',
-              'C/C++',
-              'Python',
-            ];
-          }
-        } `;
+    List<String> skills() {
+      return [
+       'HTML/CSS/JS',
+        'Flutter',
+        'Dart',
+        'React',
+        'C#',
+        'C/C++',
+        'Python',
+        ];
+        }
+      } `;
 
   const customStyle = {
     lineHeight: '1.5',
@@ -88,14 +88,19 @@ const About = () => {
       onMouseOut: () => setHoveredLine(null)
     };
   };
+
+  const preprocessCodeString = (codeString) => {
+    return codeString.split('\n').map(line => line.trimLeft()).join('\n');
+  };
+
   return (
     <>
     <div className="aboutpage" id='about'>
       <div className="title">
         About {">"}
       </div>
-      <SyntaxHighlighter language="javascript" style={solarizedlight} showLineNumbers customStyle={customStyle} codeTagProps={{ ref: codeRef }} wrapLines lineProps={lineProps} >
-        {codeString}
+      <SyntaxHighlighter language="javascript" style={solarizedlight} showLineNumbers customStyle={customStyle} codeTagProps={{ ref: codeRef }} wrapLines lineProps={lineProps} className="code">
+         {window.innerWidth <= 600 ? preprocessCodeString(codeString) : codeString}
       </SyntaxHighlighter>
       </div>
     </>

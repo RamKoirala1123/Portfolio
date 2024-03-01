@@ -3,6 +3,20 @@ import React, { useState, useEffect } from 'react';
 const Cursor = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const [deviceType, setDeviceType] = useState('');
+
+  useEffect(() => {
+    const checkDeviceType = () => {
+      try {
+        document.createEvent('TouchEvent');
+        setDeviceType('touch');
+      } catch (e) {
+        setDeviceType('mouse');
+      }
+    };
+    checkDeviceType();
+  }, []);
+
   const defaults = {
     color: 'var(--text-color)',
     size: 10,
@@ -15,8 +29,9 @@ const Cursor = () => {
   const [config, setConfig] = useState(defaults);
 
   const handleMouseMove = (event) => {
-    const { clientX, clientY } = event;
+    const { clientX, clientY } = event.touches ? event.touches[0] : event;;
     setCursorPos({ x: clientX, y: clientY });
+
     if (config.showTrail) {
       const trail = document.createElement("div");
       trail.style.backgroundColor = config.trailColor;
@@ -104,6 +119,10 @@ const Cursor = () => {
     transform: 'translate(-50%, -50%)',
     transition: '0.1s'
   };
+  
+  if (deviceType === 'touch') {
+    return null;
+  }
 
   return (
     <div id="cursor-border"

@@ -34,7 +34,7 @@ const SideBar = () => {
             <div to="/project" className={activeItem === 'project' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('project')}>
                 Project
               </div>
-            <div to="/contact"  className={activeItem === 'contact' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('contact')}>
+            <div to="/contact"  className={activeItem === 'skills' ? 'side-item active' : 'side-item'} onClick={() => scrollToComponent('skills')}>
                 Contact Me
               </div>
           

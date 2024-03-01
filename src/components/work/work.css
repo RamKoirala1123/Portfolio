@@ -1,7 +1,12 @@
-.work {
+/* .work {
     display: grid;
     row-gap: 50px;
-}
+} */
+.work {
+    display: flex;
+    flex-direction: column; /* Display cards in a single column */
+    row-gap: 50px;
+  }
 
 .work .custom-card{
     z-index: 1;
@@ -37,3 +42,10 @@
     grid-row:10 / span 9;
 }
 
+@media (min-width: 768px) {
+    .work {
+        display: grid;
+        row-gap: 50px;
+    }
+  }
+  

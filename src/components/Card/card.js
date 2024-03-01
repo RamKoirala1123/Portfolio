@@ -7,8 +7,11 @@ import Singleproject from '../Projectttt/singleproject'; // Import the Singlepro
 const THRESHOLD = 10;
 
 function Card({ title, content, backgroundImage, view }) {
-    const height = !view ? 350 : 150;
-    const width = !view ? 150 : 350;
+    let height = 0;
+    let width = 0;
+    {window.innerWidth <= 768 ? (height = !view ?350:100):(height = !view ?350:150)}
+    {window.innerWidth <= 768 ? (width = !view ? 150:150):(width = !view ?150:350)}
+    // const width = !view ? 150 : 350;
 
     const cardRef = useRef(null);
 

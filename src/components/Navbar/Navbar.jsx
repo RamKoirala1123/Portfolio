@@ -5,7 +5,7 @@ import MobileNav from '../MobileNav/MobileNav';
 import DarkMode from '../DarkMode/DarkMode';
 import { useTheme } from '../DarkMode/themecontext';
 import { NavLink } from 'react-router-dom';
-import resume from '../resume/resume.pdf';
+import resume from '../resume/Ram_Koirala_Resume.pdf';
 import { Link } from 'react-router-dom';
 import CustomButton from '../Button/CustomButton';
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             </li> */}
             <div className="svg-container">
               {/* Facebook */}
-              <a href="https://www.facebook.com/ram.koirala.5095" target="_blank"> 
+              <a href="https://www.facebook.com/ramkoirala1123" target="_blank"> 
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30" fill="var(--svg-fill-color)">
                 <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
               </svg>
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
             <div className="svg-container">
               {/* linkedin */}
-              <a href="https://www.linkedin.com/in/ram-koirala-0b443b188/" target="_blank">
+              <a href="https://www.linkedin.com/in/ramkoirala1123/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" fill="var(--svg-fill-color)">
                 <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
               </svg>

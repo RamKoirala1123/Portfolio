@@ -3,6 +3,7 @@
     /* background-color: var(--sidebar-color); */
     /* padding: 0.5rem 0; */
     position: sticky;
+    padding: 0;
     top: 0;
     z-index: 190;
     backdrop-filter: blur(50px);
@@ -128,7 +129,7 @@
 
 @media (max-width: 1325px) {
     .navbar {
-        padding: 0 2rem;
+        padding: 0 0.5rem;
     }
 }
 

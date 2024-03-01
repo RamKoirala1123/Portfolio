@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    .aboutpage .code{
+        font-size: 15px !important;
+    }
+    .react-syntax-highlighter-line-number{
+        margin-right: 0 !important;
+    }
+}
+
+/* about.css */
+/* about.css */
+.line-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5em; /* Adjust margin as needed */
+  }
+  
+  .react-syntax-highlighter-line-number {
+    flex: 0 0 auto;
+    width: 2em; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 0.5em; /* Adjust margin as needed */
+  }
+  
+  .code-content {
+    flex: 1;
+    overflow: auto; /* Allow content to overflow within its container */
+  }
+  
+  
+  

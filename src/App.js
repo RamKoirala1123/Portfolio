@@ -15,7 +15,8 @@ import Cursor from "./components/UI/Cursor/cursor";
 
 function App() {
   return (
-    <Router>
+    // <Router>
+    <>
       <Routes>
           <Route path="/project/:id" element={<Project/>}/>
           <Route path="/" element={<HomePage/>}/>
@@ -34,7 +35,8 @@ function App() {
       </div> */}
       <Cursor/>
       <BackToTop />
-    </Router>
+    {/* </Router> */}
+    </>
 
   );
 }

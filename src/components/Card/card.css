@@ -27,10 +27,11 @@
     left: 0;
     right: 0;
     bottom: -10px;
+   
   }
-  .card{
+  /* .card{
     z-index: 1;
-  }
+  } */
   
   /* .card {
     background-repeat: no-repeat;

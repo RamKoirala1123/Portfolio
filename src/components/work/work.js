@@ -143,6 +143,7 @@ import './work.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import database from '../database/project.json';
+import HorizontalWrapper from './Horizontalwrapper';
 
 const Work = () => {
   // const [isActive, setIsActive] = useState(false);
@@ -168,8 +169,8 @@ const Work = () => {
           <div className="custom-card"  data-aos={project.animation}>
             <Link to={`/project/${project.id}`}>
             <Card
-            key={project.id}
-              title={project.title}
+              key={project.id}
+              title={project.name}
               content=""
               view={project.isweb}
               backgroundImage={project.backgroundImage}

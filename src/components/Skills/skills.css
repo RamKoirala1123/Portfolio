@@ -1,0 +1,123 @@
+/* skills */
+
+.skill-section{
+    position: relative;
+    margin: 100px 0;
+}
+
+.heading{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.skills-container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7,8rem);  
+    grid-gap: 100px;
+    color: #fff;
+    /* position: absolute; */
+}
+
+/* .skill-card{
+    position: relative;
+} */
+
+.skill-img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.skill-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skill-info{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+.skill-card{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.skill-level{
+    margin-top: 20px;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: 0px; */
+    /* right: 0; */
+    /* width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 5px solid; */
+}
+
+.skill-level svg{
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+}
+
+/* .skill-level:hover{
+    border-color: var(--svg-fill-color);
+} */
+
+.skill-level:hover svg path{
+    fill: var(--active-color);
+}
+
+.skill-card .skill-level{
+    border-color: var(--active-color);
+    color: #ff4f4f;
+}
+
+.skill-card .skill-level:hover{
+    border-color: var(--svg-fill-color);
+    color: #ff4f4f;
+}
+
+
+
+
+
+.skill-cards {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .skill-cards svg {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border: 2px solid transparent; /* Border for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    transition: fill 0s;
+  }
+
+
+  .skill-cards:hover svg {
+    fill: var(--active-color);/* Change border color on hover */
+    cursor: pointer;
+  }

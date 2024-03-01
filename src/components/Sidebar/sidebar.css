@@ -62,6 +62,12 @@
     transition: ease 0s;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
 /* .side-content ul li{
     list-style: none;
 } */
