@@ -1,0 +1,48 @@
+#contactus{
+    width: 100%;
+}
+.left-sections{
+    width: 50%;
+    padding: 0;
+    padding-left:40px ;
+}
+.right-sections{
+    width: 50%;
+}
+.forms{
+    width: 80%;
+}
+.forms .contents{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.forms label{
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    color:var(--text-color);    
+}
+
+.contents input[type="text"],
+.contents input[type="email"],
+.contents textarea {
+  border-radius: 20px; 
+  height: 20px;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  background-color:var(--background-100);
+  color:var(--text-color);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.contents textarea{
+    height: 50px;
+}

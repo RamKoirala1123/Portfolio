@@ -3,7 +3,7 @@ import './Button.css'
 
 const CustomButton = ({name}) => {
   return (
-    <button className="button2">{name}</button>
+    <button className="button2" type='submit'>{name}</button>
   )
 }
 

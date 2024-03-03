@@ -55,5 +55,9 @@
             "animation":"fade-right",
             "anchor-placement":""
         }        
-    ]
+    ],
+    "skills":{
+      "name" : "React JS",
+      "icon": "./assets/image/icons/react.svg"
+    }
 }

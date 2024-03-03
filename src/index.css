@@ -9,6 +9,7 @@
   --svg-fill-color:#000;
   --selection-color: #ACCEF7;
   --hover-background-color: rgb(128, 128, 128,0.0);
+  --background-100:rgb(237, 237, 237);
   
   /* --active-color:#3301e7; */
   /* --active-color:#e85757; */
@@ -27,6 +28,7 @@
   --selection-color: #12f298;
   --svg-fill-color:rgba(235, 236, 243,0.9);
   --hover-background-color: rgb(128, 128, 128,0.02);
+  --background-100:rgb(23, 20, 53);
   /* --active-color:#7e61e7; */
   /* 060417 */
   --active-color:#0aff9d;

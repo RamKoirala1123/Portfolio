@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 // import Singleproject from "./components/Projectttt/singleproject";
 import Work from "../work/work";
 import SideBar from "../Sidebar/sidebar";
-import Contact from "../Contact/contact";
+import Contact, { ContactUs } from "../Contact/contact";
 import Home from '../CustomAnimation/home';
 import ParticlesComponent from '../CustomAnimation/particlebackground';
 import Skills from '../Skills/skills';
@@ -22,8 +22,8 @@ const HomePage = () => {
         <About />
         <Work />
         <Skills/>
-        <About/>
-        <Contact/>
+        {/* <About/> */}
+        <ContactUs/>
         <ParticlesComponent id="particles"/>
       </div>
     </div>
