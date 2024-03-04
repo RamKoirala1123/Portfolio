@@ -53,6 +53,7 @@
 .language-used {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .right {
@@ -107,8 +108,6 @@
     width: 100%;
     display: block;
 }
-
-
 
 .wrap-content-web:before {
     content: "";
@@ -225,3 +224,24 @@
     background: var(--active-color);
     filter: blur(250px);
 }
+
+
+
+@media (max-width: 768px) {
+    .left{
+        width: 85%;
+        padding-left: 30px;
+    }
+    .right{
+        width: 100%;
+    }
+    .project-page{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .circle-blur,.circle-blur1,.circle-blur3{
+        display: none;
+    }
+
+  }

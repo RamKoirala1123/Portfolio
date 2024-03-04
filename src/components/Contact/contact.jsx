@@ -64,6 +64,8 @@ export const ContactUs = () => {
       <h1 className='title'>
         Get in Touch {">"}
       </h1>
+      <div className="contactus">
+   
       <div className="left-sections">
       <form ref={form} onSubmit={sendEmail} className='forms'>
         <div className="contents">
@@ -85,12 +87,17 @@ export const ContactUs = () => {
         {/* <input type="submit" value="Send" />   */}
         </div>
         <CustomButton name={isSending?"Sending...":"Send"}/>
+        <br />
+        <br />
+        <br />
       </form>
       </div>
       <div className="right-sections">
-
+        {/* <img src="../assets/image/calc.jpg" width="100" height="100" alt="" /> */}
       </div>
     </div>
+         
+      </div>
 
   );
 };

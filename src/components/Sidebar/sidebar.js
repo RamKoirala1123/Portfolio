@@ -5,20 +5,17 @@ import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
   const [activeItem, setActiveItem] = useState('homepage');
-
-
   const scrollToComponent = (componentId) => {
     setActiveItem(componentId);
     const component = document.getElementById(componentId);
     if (component) {
-        component.scrollIntoView({
-            behavior: 'smooth',
-
-            // duration: 100,
-            block: 'start',
-            inline: 'nearest',
-            // offset:1000,
-        });
+      const headerOffset = 70;
+      const elementPosition = component.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY  - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
 };
 

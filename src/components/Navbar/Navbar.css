@@ -2,11 +2,14 @@
     /* background: rgba(0, 0, 0, 0.1); */
     /* background-color: var(--sidebar-color); */
     /* padding: 0.5rem 0; */
-    position: sticky;
+    /* position: sticky; */
     padding: 0;
     top: 0;
     z-index: 190;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(70px);
+    height: 60px;
+    position: fixed;
+    width: 90%;
 }
 
 .nav-content {

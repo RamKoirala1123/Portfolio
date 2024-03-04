@@ -36,7 +36,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'bubble',
+            mode: 'grab',
           },
         },
         modes: {
@@ -64,6 +64,13 @@ const ParticlesComponent = (props) => {
         color: {
           value: "#fff"
         },
+        // links: {
+        //   color: "#ffffff",
+        //   distance: 150,
+        //   enable: true,
+        //   opacity: 0.5,
+        //   width: 1,
+        // },
         move: {
           direction: "none",
           enable: true,
@@ -78,7 +85,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 50,
+          value: 100,
         },
         opacity: {
           value: 0.5,
@@ -111,7 +118,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'bubble',
+            mode: 'grab',
           },
         },
         modes: {
@@ -139,6 +146,13 @@ const ParticlesComponent = (props) => {
         color: {
           value: "#0d0b23"
         },
+         links: {
+          color: "#0d0b23",
+          distance: 150,
+          enable: false,
+          opacity: 0.2,
+          width: 1,
+        },
         move: {
           direction: "none",
           enable: true,
@@ -153,10 +167,10 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 50,
+          value: 150,
         },
         opacity: {
-          value: 0.3,
+          value: 0.2,
         },
         shape: {
           type: "circle",

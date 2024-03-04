@@ -13,7 +13,7 @@
 }
 
 .skill-name{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
     text-transform: capitalize;
@@ -41,4 +41,22 @@
     bottom: 0;
     width: 60px;
     height: 60px;
+    /* opacity: 1; */
 }
+
+@media (max-width: 768px) {
+    .skill-level svg{
+        bottom: 0;
+        width: 42px;
+        height: 42px;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* width: 100%; */
+        margin-left: 5% ;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+}
+  

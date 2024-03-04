@@ -66,6 +66,7 @@ body {
   left:20px;
   margin-bottom: 30px;
   margin-top:40px;
+  width: 90%;
 }
 
 .title::before {
@@ -99,9 +100,11 @@ body {
 }
 
 .body{
-  width: 90vw;
+  /* width: 90vw; */
+  margin-top: 70px;
   margin-left: 5vw;
   margin-right: 5vw;
+  bottom: 0;
 }
 
 .home{

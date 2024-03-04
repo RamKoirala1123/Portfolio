@@ -29,9 +29,9 @@
     margin: 0 1.5rem;
 }
 
-.mobile-menu-content li a.active{
+/* .mobile-menu-content li a.active{
     color: var(--active-color);
-}
+} */
 
 .mobile-menu-content .nav-item{
     text-decoration: none;
@@ -40,19 +40,18 @@
     color: #fff;
     position: relative;
     cursor: pointer;
+    
 }
 
 .mobile-menu img{
     margin-bottom: 3rem;
-
 }
 
-.mobile-menu ul{
+.mobile-menu .nav-items{
     display: flex;
     flex-direction: column;
     gap:2rem;
     list-style: none;
-    margin-left: -2rem;
 }
 
 @media (max-width: 769px) {
@@ -62,3 +61,8 @@
     
 }
 
+.social-icons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 3rem;
+}

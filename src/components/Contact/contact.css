@@ -1,6 +1,10 @@
 #contactus{
     width: 100%;
 }
+
+.contactus{
+    display: flex;
+}
 .left-sections{
     width: 50%;
     padding: 0;
@@ -46,3 +50,16 @@
 .contents textarea{
     height: 50px;
 }
+
+
+@media (max-width: 1200px) {
+    .left-sections{
+        width: 100%;
+    }
+    .right-sections{
+        width: 100%;
+    }
+    .contactus{
+        display: block;
+    }
+  }

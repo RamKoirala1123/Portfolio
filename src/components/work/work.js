@@ -156,7 +156,7 @@ const Work = () => {
   // };
 
   useEffect(() => {
-    AOS.init({ duration: "500", once: true });
+    AOS.init({ duration: "500",   });
   }, [])
   return (
     <>

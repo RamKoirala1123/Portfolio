@@ -117,7 +117,8 @@ const Cursor = () => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    transition: '0.1s'
+    transition: '0.1s',
+    zIndex:'10000',
   };
   
   if (deviceType === 'touch') {

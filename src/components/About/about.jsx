@@ -41,6 +41,9 @@ const About = () => {
     fontSize: '1.3rem',
     borderRadius: '5px',
     backgroundColor: 'var(--background-color)',
+    // opacity:'0',
+    // backgroundColor: 'transparent',
+
     padding: '0px',
   };
 

@@ -11,7 +11,8 @@ import Skills from '../Skills/skills';
 
 const HomePage = () => {
   return (
-    
+    <>  
+  
     <div className="home">
     <SideBar />
     <div className="mainbody">
@@ -28,6 +29,7 @@ const HomePage = () => {
       </div>
     </div>
   </div>
+  </>
   )
 }
 
