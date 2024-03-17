@@ -101,6 +101,7 @@ body {
 
 .body{
   /* width: 90vw; */
+  width: 90%;
   margin-top: 70px;
   margin-left: 5vw;
   margin-right: 5vw;

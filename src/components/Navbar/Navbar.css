@@ -9,7 +9,7 @@
     backdrop-filter: blur(70px);
     height: 60px;
     position: fixed;
-    width: 90%;
+    width: 100%;
 }
 
 .nav-content {
